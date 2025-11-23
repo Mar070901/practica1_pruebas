@@ -1,6 +1,7 @@
-# Schemas Fresh&Go (Tema 2)
+# Schemas Fresh&Go (Tema 2) 
+## I002: Añadidos schemas iniciales #3 - ID Commit: 30a5a2f
 
-**Relacionado con:** I002: Añadidos schemas iniciales #3 - ID Commit: 30a5a2f
+**Relacionado con:** 
 Esta carpeta contiene los **JSON Schemas** utilizados para validar los datos de los servicios **CRM** e **IoT** del proyecto **Fresh&Go**.
 
 > Nota: Los schemas incluidos son los mismos que se definieron en la **Práctica 1** y ya están mergeados en `main`. Se utilizan para asegurar que los endpoints devuelvan datos conforme a las estructuras esperadas.
