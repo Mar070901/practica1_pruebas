@@ -1,4 +1,6 @@
 #  Documentación - Fresh&Go
+## I002: Añadida documentación inicial: API_ENDPONTS,QUICK_START_VERIFICACION_NIVEL2_CORTO,postman_collection y readme #3  ID Commit:a137e14
+
 
 ## Guías Rápidas
 
