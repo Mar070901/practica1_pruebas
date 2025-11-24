@@ -1,3 +1,22 @@
+/*
+"""
+======================================================================================
+Nombre      : main.py
+Descripción : Servicio principal FastAPI para el sistema IoT Fresh&Go. Gestiona 
+              endpoints de sensores, lecturas, vehículos, dashboard y tracking 
+              GPS, incluyendo validación de datos y filtros por parámetros.
+
+--------------------------------------------------------------------------
+HISTÓRICO DE CAMBIOS
+ISSUE     AUTOR    FECHA         DESCRIPCIÓN
+--------  -------  ------------  -----------------------------------------------------
+I002      MQP      24-11-2025    Creación inicial del main.py con endpoints básicos
+I002      JLC      24-11-2025    Integración de filtros, validación JSON y estadísticas
+I002      JLC      24-11-2025    Añadido endpoints GPS y dashboard resumen
+======================================================================================
+"""
+*\
+
 from fastapi.responses import HTMLResponse
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -711,3 +730,4 @@ async def get_mapa_todas_ubicaciones():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8001)
+
