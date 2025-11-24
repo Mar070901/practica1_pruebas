@@ -19,7 +19,7 @@ Detalle:
 HISTÓRICO DE CAMBIOS
 ISSUE     AUTOR    FECHA         DESCRIPCIÓN
 --------  -------  ------------  -----------------------------------------------------
-I001      MQP      20-11-2025    Creación del módulo de controllers
+I002      MQP      20-11-2025    Creación del módulo de controllers
 I002      JLC      20-11-2025    Añadido servicio CRM inicial (#3)
 ======================================================================================
 */
