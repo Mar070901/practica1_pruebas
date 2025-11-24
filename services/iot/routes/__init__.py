@@ -1,3 +1,21 @@
+/*
+"""
+======================================================================================
+Nombre      : routes/__init__.py
+Descripción : Definición de endpoints de la API IoT. Expone rutas para sensores,
+              lecturas y vehículos. Se integra con los controladores y el sistema
+              centralizado de manejo de errores.
+
+--------------------------------------------------------------------------
+HISTÓRICO DE CAMBIOS
+ISSUE     AUTOR    FECHA         DESCRIPCIÓN
+--------  -------  ------------  -----------------------------------------------------
+I002      MQP      22-11-2025    Creación inicial de las rutas del servicio IoT (#3)
+I002      JLC      22-11-2025    Integración con controladores y validadores
+======================================================================================
+"""
+*\
+
 """ROUTES - Definición de endpoints"""
 from fastapi import APIRouter, HTTPException, Query
 from typing import Optional
