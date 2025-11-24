@@ -1,3 +1,19 @@
+/*
+======================================================================================
+Nombre      : error_handlers.py
+Descripción : Manejo centralizado de excepciones para FastAPI. Centraliza la gestión
+              de errores de validación, errores personalizados y errores no
+              controlados. Incluye middleware para registro de errores.
+
+--------------------------------------------------------------------------
+HISTÓRICO DE CAMBIOS
+ISSUE     AUTOR    FECHA         DESCRIPCIÓN
+--------  -------  ------------  -----------------------------------------------------
+I002      MQP      20-11-2025    Creación inicial del módulo de manejo de errores
+I002      JLC      20-11-2025    Integración con FastAPI y middleware de logging (#3)
+======================================================================================
+*/
+    
 """
 Manejo centralizado de excepciones para FastAPI
 Centraliza la gestión de errores en toda la aplicación
