@@ -1,3 +1,27 @@
+/*
+"""
+======================================================================================
+Nombre      : controllers/__init__.py
+Descripción : Controladores del servicio IoT. Contienen la lógica de negocio para
+              gestión de sensores, lecturas y vehículos. Realizan filtrado, validación
+              y paginación de datos cargados desde JSON.
+
+Detalle:
+- SensorController.get_all(data, tipo, ubicacionId, validator)
+- SensorController.get_by_id(data, sensor_id, validator)
+- LecturaController.get_all(data, sensorId, ubicacionId, from_date, to_date, limit, validator)
+- VehiculoController.get_all(data, validator)
+- VehiculoController.get_by_id(data, vehiculo_id, validator)
+
+--------------------------------------------------------------------------
+HISTÓRICO DE CAMBIOS
+ISSUE     AUTOR    FECHA         DESCRIPCIÓN
+--------  -------  ------------  -----------------------------------------------------
+I002      MQP      22-11-2025    Creación inicial de controladores IoT (#3)
+I002      JLC      22-11-2025    Validaciones y filtros implementados en controladores
+======================================================================================
+"""
+\*
 """CONTROLLERS - Lógica de negocio"""
 from dateutil import parser as date_parser
 
