@@ -1,0 +1,430 @@
+{
+  "info": {
+    "_postman_id": "fresh-and-go-api",
+    "name": "Fresh&Go API Collection",
+    "description": "Colección de endpoints para los servicios CRM e IoT de Fresh&Go",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": "1.0.0"
+  },
+  "item": [
+    {
+      "name": "CRM Service",
+      "description": "Endpoints del servicio CRM (Cliente, Pedidos, Proveedores, Conductores)",
+      "item": [
+        {
+          "name": "Clientes",
+          "description": "Gestión de clientes",
+          "item": [
+            {
+              "name": "GET - Obtener todos los clientes",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3001/clientes?q=&page=1&pageSize=25",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["clientes"],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Obtener cliente por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3001/clientes/CLI001",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["clientes", "CLI001"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Crear nuevo cliente",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"id\": \"CLI006\",\n  \"nombre\": \"Carlos López\",\n  \"email\": \"carlos@example.com\",\n  \"telefono\": \"+34 987654321\",\n  \"direccion\": \"Avenida Paseo 456, Barcelona\",\n  \"ciudad\": \"Barcelona\",\n  \"codigoPostal\": \"08002\",\n  \"pais\": \"España\",\n  \"estado\": \"activo\"\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:3001/clientes",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["clientes"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar cliente",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"nombre\": \"Juan García Martínez\",\n  \"telefono\": \"+34 912345679\",\n  \"estado\": \"inactivo\"\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:3001/clientes/CLI001",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["clientes", "CLI001"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar cliente",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3001/clientes/CLI006",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["clientes", "CLI006"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Pedidos",
+          "description": "Gestión de pedidos",
+          "item": [
+            {
+              "name": "GET - Obtener todos los pedidos",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3001/pedidos?clienteId=&estado=&page=1&pageSize=25",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["pedidos"],
+                  "query": [
+                    {
+                      "key": "clienteId",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "estado",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Obtener pedido por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3001/pedidos/PED001",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["pedidos", "PED001"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Proveedores",
+          "description": "Gestión de proveedores",
+          "item": [
+            {
+              "name": "GET - Obtener todos los proveedores",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3001/proveedores",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["proveedores"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Conductores",
+          "description": "Gestión de conductores",
+          "item": [
+            {
+              "name": "GET - Obtener todos los conductores",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3001/conductores?estado=",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["conductores"],
+                  "query": [
+                    {
+                      "key": "estado",
+                      "value": "",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IoT Service",
+      "description": "Endpoints del servicio IoT (Sensores, Lecturas, Vehículos)",
+      "item": [
+        {
+          "name": "Sensores",
+          "description": "Gestión de sensores",
+          "item": [
+            {
+              "name": "GET - Obtener todos los sensores",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8001/sensores?tipo=&ubicacionId=",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8001",
+                  "path": ["sensores"],
+                  "query": [
+                    {
+                      "key": "tipo",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "ubicacionId",
+                      "value": "",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Obtener sensor por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8001/sensores/SENS001",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8001",
+                  "path": ["sensores", "SENS001"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Lecturas",
+          "description": "Gestión de lecturas de sensores",
+          "item": [
+            {
+              "name": "GET - Obtener todas las lecturas",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8001/lecturas?sensorId=&ubicacionId=&desde=&hasta=&limit=100",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8001",
+                  "path": ["lecturas"],
+                  "query": [
+                    {
+                      "key": "sensorId",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "ubicacionId",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "desde",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "hasta",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "limit",
+                      "value": "100"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Obtener lectura por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8001/lecturas/LECT001",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8001",
+                  "path": ["lecturas", "LECT001"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Obtener lecturas de vehículo",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8001/lecturas/vehiculo/VEH001",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8001",
+                  "path": ["lecturas", "vehiculo", "VEH001"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Vehículos",
+          "description": "Gestión de vehículos",
+          "item": [
+            {
+              "name": "GET - Obtener todos los vehículos",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8001/vehiculos?estado=&modelo=",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8001",
+                  "path": ["vehiculos"],
+                  "query": [
+                    {
+                      "key": "estado",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "modelo",
+                      "value": "",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Obtener vehículo por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8001/vehiculos/VEH001",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8001",
+                  "path": ["vehiculos", "VEH001"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Obtener estado de vehículo",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8001/vehiculos/VEH001/estado",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8001",
+                  "path": ["vehiculos", "VEH001", "estado"]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
