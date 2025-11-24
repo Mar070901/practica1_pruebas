@@ -19,7 +19,7 @@ Detalle:
 HISTÓRICO DE CAMBIOS
 ISSUE     AUTOR    FECHA         DESCRIPCIÓN
 --------  -------  ------------  -----------------------------------------------------
-I001      MQP      19-11-2025    Creación del módulo de rutas CRM
+I002      MQP      19-11-2025    Creación del módulo de rutas CRM
 I002      JLC      19-11-2025    Añadido servicio CRM inicial (#3)
 ======================================================================================
 */
