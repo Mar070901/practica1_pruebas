@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Sensor",
+  "description": "Sensor combinado de temperatura y GPS para monitoreo de cadena de frío",
+  "type": "object",
+  "required": ["id", "nombre", "ubicacionId", "tipoProducto"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identificador único del sensor"
+    },
+    "nombre": {
+      "type": "string",
+      "description": "Nombre descriptivo del sensor"
+    },
+    "ubicacionId": {
+      "type": "string",
+      "description": "ID del vehículo o almacén donde está instalado"
+    },
+    "tipoProducto": {
+      "type": "string",
+      "enum": ["refrigerado", "congelado", "delicado"],
+      "description": "Tipo de producto que monitorea"
+    },
+    "rangoMin": {
+      "type": "number",
+      "description": "Temperatura mínima óptima en °C"
+    },
+    "rangoMax": {
+      "type": "number",
+      "description": "Temperatura máxima óptima en °C"
+    },
+    "umbralAlerta": {
+      "type": "number",
+      "description": "Temperatura de alerta en °C"
+    },
+    "umbralCritico": {
+      "type": "number",
+      "description": "Temperatura crítica (rotura cadena) en °C"
+    },
+    "intervaloLectura": {
+      "type": "integer",
+      "description": "Intervalo de lectura en segundos",
+      "default": 300
+    }
+  },
+  "additionalProperties": false
+}

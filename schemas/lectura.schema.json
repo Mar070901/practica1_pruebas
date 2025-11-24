@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lectura",
+  "description": "Lectura combinada de temperatura y ubicación GPS con detección de anomalías",
+  "type": "object",
+  "required": ["id", "sensorId", "ubicacionId", "timestamp", "temperatura", "gps", "estado"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "sensorId": {
+      "type": "string"
+    },
+    "ubicacionId": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Fecha y hora de la lectura en formato ISO-8601"
+    },
+    "temperatura": {
+      "type": "number",
+      "description": "Temperatura medida en °C"
+    },
+    "gps": {
+      "type": "object",
+      "required": ["latitud", "longitud"],
+      "properties": {
+        "latitud": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitud": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "altitud": {
+          "type": "number",
+          "description": "Altitud en metros (opcional)"
+        }
+      }
+    },
+    "estado": {
+      "type": "string",
+      "enum": ["normal", "alerta", "critico"],
+      "description": "Estado de la temperatura respecto a umbrales"
+    },
+    "alertaActiva": {
+      "type": "boolean",
+      "description": "Indica si hay una alerta activa",
+      "default": false
+    },
+    "tiempoFueraRango": {
+      "type": "integer",
+      "description": "Minutos fuera del rango óptimo",
+      "default": 0
+    },
+    "cadenRota": {
+      "type": "boolean",
+      "description": "Indica si se ha roto la cadena de frío",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}
