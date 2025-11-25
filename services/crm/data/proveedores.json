@@ -1,0 +1,80 @@
+[
+  {
+    "id": "PROV001",
+    "nombre": "Frutas y Verduras Andaluzas S.L.",
+    "contacto": "Juan García Martínez",
+    "email": "ventas@frutasandaluzas.com",
+    "telefono": "+34 955 111 222",
+    "direccion": "Polígono Industrial Los Remedios, Sevilla",
+    "cif": "A12345678",
+    "categoria": "Productos frescos",
+    "productos": ["Frutas", "Verduras", "Hortalizas"],
+    "horarioEntrega": "06:00-22:00",
+    "diasEntrega": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+  },
+  {
+    "id": "PROV002",
+    "nombre": "Lácteos del Sur",
+    "contacto": "María López Fernández",
+    "email": "pedidos@lactoesdelsur.es",
+    "telefono": "+34 955 222 333",
+    "direccion": "Calle Industrial 15, Dos Hermanas",
+    "cif": "B87654321",
+    "categoria": "Lácteos y derivados",
+    "productos": ["Leche", "Yogur", "Queso", "Mantequilla"],
+    "horarioEntrega": "07:00-20:00",
+    "diasEntrega": ["Lunes", "Miércoles", "Viernes"]
+  },
+  {
+    "id": "PROV003",
+    "nombre": "Distribuciones Alimentarias Sevilla",
+    "contacto": "Pedro Sánchez",
+    "email": "info@distalisevilla.com",
+    "telefono": "+34 955 333 444",
+    "direccion": "Avenida Blas Infante 20, Sevilla",
+    "cif": "C11223344",
+    "categoria": "Distribuidor mayorista",
+    "productos": ["Cereales", "Legumbres", "Productos secos", "Especias"],
+    "horarioEntrega": "08:00-18:00",
+    "diasEntrega": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
+  },
+  {
+    "id": "PROV004",
+    "nombre": "Carnes Ibéricas Premium",
+    "contacto": "Francisco Ruiz García",
+    "email": "ventas@carnesibericas.com",
+    "telefono": "+34 955 444 555",
+    "direccion": "Matadero y Carnicería, Utrera",
+    "cif": "D55667788",
+    "categoria": "Carnes y aves",
+    "productos": ["Jamón ibérico", "Carne de cerdo", "Pollo", "Pavo"],
+    "horarioEntrega": "05:00-14:00",
+    "diasEntrega": ["Martes", "Jueves", "Sábado"]
+  },
+  {
+    "id": "PROV005",
+    "nombre": "Pescados y Mariscos Atlántico",
+    "contacto": "Antonio Flores López",
+    "email": "pedidos@pescatlantico.es",
+    "telefono": "+34 955 555 666",
+    "direccion": "Mercadillo de Pescado, Cádiz",
+    "cif": "E99887766",
+    "categoria": "Pescados y mariscos",
+    "productos": ["Pescado fresco", "Mariscos", "Conservas de pescado"],
+    "horarioEntrega": "05:00-15:00",
+    "diasEntrega": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
+  },
+  {
+    "id": "PROV006",
+    "nombre": "Bebidas y Refrescos Andaluces",
+    "contacto": "Javier Moreno Sánchez",
+    "email": "comercial@bebidasandaluzas.com",
+    "telefono": "+34 955 666 777",
+    "direccion": "Polígono San Pablo, Sevilla",
+    "cif": "F33445566",
+    "categoria": "Bebidas",
+    "productos": ["Refrescos", "Agua", "Vinos", "Cerveza"],
+    "horarioEntrega": "09:00-18:00",
+    "diasEntrega": ["Lunes", "Miércoles", "Viernes"]
+  }
+]

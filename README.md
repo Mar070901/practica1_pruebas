@@ -1,68 +1,87 @@
-#  Fresh&Go – Plataforma Logística Unificada
 
-**Autores:**  
-- Mar Alejandra Quispe Escalante  
-- Jesús Lacruz  
+# Servicios Fresh&Go (Tema 2)
 
-**Versión:** 1.0  
-**Fecha:** 01/09/2025  
+**Relacionado con:** I002 - Implementación de APIs simuladas (CRM e IoT) [#3]  - ID commit inicial: 88296c0
 
----
-
-##  Descripción
-
-**Fresh&Go** es una simulación de una plataforma logística moderna que busca **unificar la gestión de pedidos, flota, incidencias y usuarios** en un sistema centralizado.  
-El proyecto forma parte de una práctica académica cuyo objetivo es **definir una arquitectura base** para una empresa logística ficticia dedicada a la distribución de productos alimentarios.
-
-> Eslogan: **“De la tienda a la mesa en un click”**
+Este directorio contiene los servicios backend simulados del proyecto **Fresh&Go**, correspondientes al **Tema 2** de la práctica de Integración de Aplicaciones (IAAPS T2).
+Se incluyen dos servicios independientes: **CRM** y **IoT**, que simulan la lógica de negocio, datos y endpoints definidos en los schemas del Tema 1.
 
 ---
 
-##  Objetivos del Proyecto
+##  Servicio CRM - I002: Añadido servicio CRM inicial #3 - ID Commit subida: 34f9519
 
-- Desarrollar una **API REST** que gestione pedidos, vehículos, incidencias y usuarios.  
-- Centralizar la información en una **base de datos unificada**.  
-- Simular la integración con sistemas externos:
-  - **CRM** → datos de clientes y proveedores  
-  - **IoT** → lecturas de ubicación y temperatura  
-- Ofrecer una interfaz **Frontend web** para visualizar pedidos e incidencias.  
-- Sentar las bases para futuras ampliaciones (autenticación, dashboards, pagos, etc.).
+* **Tecnología:** Node.js + Express
+* **Objetivo:** Gestión simulada de clientes, pedidos, proveedores y conductores.
+* **Estructura principal:**
 
----
-
-## Presentación del Proyecto
-
-La presentación del proyecto se encuentra en este repositorio y en Prezi.
-
-- PDF de la presentación: [Fresh&Go-AQ.INICIAL.pdf](PresentacionYPDF/Fresh&Go-AQ.INICIAL.pdf)  
-- Escanea el QR para acceder a la presentación online, ubicado en la carpeta del enlace: ![QR Presentación](PresentacionYPDF)
-- Enlace directo a Prezi: [Presentación en Prezi](https://prezi.com/view/S4qhZFBD8hRKz6VAyJtk/?referral_token=oTccAslnB3FN)
-
-
----
-##  Arquitectura del Sistema
-
-La arquitectura está basada en el **modelo C4**, distribuida en varios niveles:
-
-| Nivel | Descripción |
-|-------|--------------|
-| 1 | **Contexto** – Define actores y sistemas externos (CRM, IoT). |
-| 2 | **Contenedores** – Frontend, API, Base de Datos, Servicios simulados. |
-| 3 | **Componentes** – Controladores, servicios, repositorios y adaptadores. |
-| 4 | **Lógica de Integración** – Manejador de errores y decisiones 0/1. |
+  * `src/controllers`: lógica del negocio
+  * `src/routes`: definición de endpoints
+  * `src/middleware`: manejo de errores
+  * `data`: datos JSON simulados de clientes, pedidos, productos y proveedores
+  * `index.js`: inicialización del servicio
+* **Endpoints principales:** `/clientes`, `/pedidos`, `/proveedores`, `/conductores`
+* **Validación:** datos validados contra los schemas en `../../schemas/`
 
 ---
 
-##  Estructura de Carpetas y Contenidos
+##  Servicio IoT - I002: Añadido servicio IoT inicial #3 - ID Commit subida: aabf890
 
-```text
-PRACTICA1/
-├─ Modelo de datos(JSON)/        → Archivos JSON que representan las entidades del sistema
-├─ diagrama/       → Archivos HTML con diagramas de cada nivel de la arquitectura (Contexto, Contenedores, Componentes, Lógica)
-├─ PresentacionYPDF/           → Documentación adicional Presentacion y PDF (ej. Fresh&Go-AQ.INICIAL.pdf) que resume la información y los diagramas
-├─ README.md       → Documentación principal del proyecto
+* **Tecnología:** Python + FastAPI
+* **Objetivo:** Monitoreo de vehículos refrigerados y sensores IoT.
+* **Estructura principal:**
 
+  * `controllers`: lógica del negocio
+  * `routes`: definición de endpoints
+  * `data`: sensores, lecturas y rutas en JSON
+  * `error_handlers.py`: manejo de errores
+  * `main.py`: inicialización del servicio
+  * `requirements.txt`: librerías necesarias
+* **Endpoints principales:** `/sensores`, `/lecturas`, `/vehiculos`
+* **Validación:** datos validados contra los schemas en `../../schemas/`
+* **Estados:** `activo`, `mantenimiento`, `inactivo`, `averia` para vehículos y `activo`, `inactivo`, `error` para sensores
 
+---
 
+## Uso general
 
+1. **Instalar dependencias:**
 
+```bash
+# CRM
+cd services/crm
+npm install
+
+# IoT
+cd ../iot
+pip install -r requirements.txt
+```
+
+2. **Ejecutar servicios:**
+
+```bash
+# CRM
+npm run dev        # desarrollo
+npm start          # producción
+
+# IoT
+uvicorn main:app --reload --port 8001
+```
+
+3. **Endpoints:** consultar documentación en cada servicio y validar contra schemas JSON en `../../schemas/`
+
+---
+
+## Contribución
+
+* Hacer fork del repositorio
+* Crear una rama para cada característica
+* Hacer commit de los cambios referenciando el Issue [#3]
+* Enviar Pull Request
+
+---
+
+## Licencia
+
+MIT License - ver LICENSE para más detalles
+
+---

@@ -1,0 +1,354 @@
+[
+  {
+    "id": "LECT001",
+    "sensorId": "SENS001",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:00:00Z",
+    "temperatura": 2.1,
+    "gps": {
+      "latitud": 37.3886,
+      "longitud": -5.9845,
+      "altitud": 12
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT002",
+    "sensorId": "SENS001",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:05:00Z",
+    "temperatura": 3.8,
+    "gps": {
+      "latitud": 37.3890,
+      "longitud": -5.9850,
+      "altitud": 13
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT003",
+    "sensorId": "SENS001",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:10:00Z",
+    "temperatura": 4.5,
+    "gps": {
+      "latitud": 37.3895,
+      "longitud": -5.9855,
+      "altitud": 14
+    },
+    "estado": "alerta",
+    "alertaActiva": true,
+    "tiempoFueraRango": 5,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT004",
+    "sensorId": "SENS001",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:15:00Z",
+    "temperatura": 5.2,
+    "gps": {
+      "latitud": 37.3900,
+      "longitud": -5.9860,
+      "altitud": 15
+    },
+    "estado": "alerta",
+    "alertaActiva": true,
+    "tiempoFueraRango": 10,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT005",
+    "sensorId": "SENS001",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:20:00Z",
+    "temperatura": 3.2,
+    "gps": {
+      "latitud": 37.3905,
+      "longitud": -5.9865,
+      "altitud": 16
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT006",
+    "sensorId": "SENS002",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:00:00Z",
+    "temperatura": -19.5,
+    "gps": {
+      "latitud": 37.3886,
+      "longitud": -5.9845,
+      "altitud": 12
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT007",
+    "sensorId": "SENS002",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:05:00Z",
+    "temperatura": -18.2,
+    "gps": {
+      "latitud": 37.3890,
+      "longitud": -5.9850,
+      "altitud": 13
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT008",
+    "sensorId": "SENS002",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:10:00Z",
+    "temperatura": -14.8,
+    "gps": {
+      "latitud": 37.3895,
+      "longitud": -5.9855,
+      "altitud": 14
+    },
+    "estado": "alerta",
+    "alertaActiva": true,
+    "tiempoFueraRango": 5,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT009",
+    "sensorId": "SENS002",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:15:00Z",
+    "temperatura": -11.5,
+    "gps": {
+      "latitud": 37.3900,
+      "longitud": -5.9860,
+      "altitud": 15
+    },
+    "estado": "critico",
+    "alertaActiva": true,
+    "tiempoFueraRango": 10,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT010",
+    "sensorId": "SENS002",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:20:00Z",
+    "temperatura": -10.2,
+    "gps": {
+      "latitud": 37.3905,
+      "longitud": -5.9865,
+      "altitud": 16
+    },
+    "estado": "critico",
+    "alertaActiva": true,
+    "tiempoFueraRango": 15,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT011",
+    "sensorId": "SENS002",
+    "ubicacionId": "VEH001",
+    "timestamp": "2025-11-11T08:25:00Z",
+    "temperatura": -9.8,
+    "gps": {
+      "latitud": 37.3910,
+      "longitud": -5.9870,
+      "altitud": 17
+    },
+    "estado": "critico",
+    "alertaActiva": true,
+    "tiempoFueraRango": 20,
+    "cadenRota": true
+  },
+  {
+    "id": "LECT012",
+    "sensorId": "SENS003",
+    "ubicacionId": "VEH002",
+    "timestamp": "2025-11-11T08:00:00Z",
+    "temperatura": 0.8,
+    "gps": {
+      "latitud": 37.3920,
+      "longitud": -5.9940,
+      "altitud": 10
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT013",
+    "sensorId": "SENS003",
+    "ubicacionId": "VEH002",
+    "timestamp": "2025-11-11T08:03:00Z",
+    "temperatura": 1.5,
+    "gps": {
+      "latitud": 37.3925,
+      "longitud": -5.9945,
+      "altitud": 11
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT014",
+    "sensorId": "SENS003",
+    "ubicacionId": "VEH002",
+    "timestamp": "2025-11-11T08:06:00Z",
+    "temperatura": 2.3,
+    "gps": {
+      "latitud": 37.3930,
+      "longitud": -5.9950,
+      "altitud": 12
+    },
+    "estado": "alerta",
+    "alertaActiva": true,
+    "tiempoFueraRango": 3,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT015",
+    "sensorId": "SENS003",
+    "ubicacionId": "VEH002",
+    "timestamp": "2025-11-11T08:09:00Z",
+    "temperatura": 1.2,
+    "gps": {
+      "latitud": 37.3935,
+      "longitud": -5.9955,
+      "altitud": 13
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT016",
+    "sensorId": "SENS004",
+    "ubicacionId": "VEH002",
+    "timestamp": "2025-11-11T08:00:00Z",
+    "temperatura": 2.5,
+    "gps": {
+      "latitud": 37.3920,
+      "longitud": -5.9940,
+      "altitud": 10
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT017",
+    "sensorId": "SENS004",
+    "ubicacionId": "VEH002",
+    "timestamp": "2025-11-11T08:05:00Z",
+    "temperatura": 3.1,
+    "gps": {
+      "latitud": 37.3925,
+      "longitud": -5.9945,
+      "altitud": 11
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT018",
+    "sensorId": "SENS005",
+    "ubicacionId": "ALM001",
+    "timestamp": "2025-11-11T07:00:00Z",
+    "temperatura": 3.2,
+    "gps": {
+      "latitud": 37.3800,
+      "longitud": -5.9800,
+      "altitud": 8
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT019",
+    "sensorId": "SENS005",
+    "ubicacionId": "ALM001",
+    "timestamp": "2025-11-11T07:10:00Z",
+    "temperatura": 3.5,
+    "gps": {
+      "latitud": 37.3800,
+      "longitud": -5.9800,
+      "altitud": 8
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT020",
+    "sensorId": "SENS006",
+    "ubicacionId": "ALM001",
+    "timestamp": "2025-11-11T07:00:00Z",
+    "temperatura": -20.1,
+    "gps": {
+      "latitud": 37.3800,
+      "longitud": -5.9800,
+      "altitud": 8
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT021",
+    "sensorId": "SENS006",
+    "ubicacionId": "ALM001",
+    "timestamp": "2025-11-11T07:10:00Z",
+    "temperatura": -19.8,
+    "gps": {
+      "latitud": 37.3800,
+      "longitud": -5.9800,
+      "altitud": 8
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  },
+  {
+    "id": "LECT022",
+    "sensorId": "SENS007",
+    "ubicacionId": "ALM002",
+    "timestamp": "2025-11-11T07:00:00Z",
+    "temperatura": 2.8,
+    "gps": {
+      "latitud": 37.3850,
+      "longitud": -5.9750,
+      "altitud": 9
+    },
+    "estado": "normal",
+    "alertaActiva": false,
+    "tiempoFueraRango": 0,
+    "cadenRota": false
+  }
+]

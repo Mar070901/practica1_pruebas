@@ -1,0 +1,50 @@
+[
+  {
+    "id": "VEH001",
+    "matricula": "7234BXJ",
+    "capacidadKg": 2500,
+    "gps": "37.3887,-5.9920",
+    "temperatura": 4.5,
+    "valor": "Activo"
+  },
+  {
+    "id": "VEH002",
+    "matricula": "4567XYZ",
+    "capacidadKg": 3000,
+    "gps": "37.3920,-5.9850",
+    "temperatura": 4.2,
+    "valor": "Activo"
+  },
+  {
+    "id": "VEH003",
+    "matricula": "8901DEF",
+    "capacidadKg": 2800,
+    "gps": "37.3950,-5.9900",
+    "temperatura": 4.8,
+    "valor": "Activo"
+  },
+  {
+    "id": "VEH004",
+    "matricula": "2345GHI",
+    "capacidadKg": 2200,
+    "gps": "37.3880,-5.9880",
+    "temperatura": 5.1,
+    "valor": "Activo"
+  },
+  {
+    "id": "VEH005",
+    "matricula": "6789JKL",
+    "capacidadKg": 2000,
+    "gps": "37.3910,-5.9870",
+    "temperatura": 4.9,
+    "valor": "Mantenimiento"
+  },
+  {
+    "id": "VEH006",
+    "matricula": "3456MNO",
+    "capacidadKg": 2600,
+    "gps": "37.3900,-5.9910",
+    "temperatura": 4.6,
+    "valor": "Activo"
+  }
+]

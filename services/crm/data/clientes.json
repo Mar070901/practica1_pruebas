@@ -1,0 +1,37 @@
+[
+  {
+    "id": "CLI001",
+    "nombre": "Restaurante El Buen Sabor",
+    "email": "pedidos@elbuensabor.com",
+    "direccion": "Calle Mayor 45, 41001 Sevilla",
+    "telefono": "+34 954 123 456"
+  },
+  {
+    "id": "CLI002",
+    "nombre": "Supermercado Fresh Market",
+    "email": "compras@freshmarket.es",
+    "direccion": "Avenida de la Constitución 23, 41002 Sevilla",
+    "telefono": "+34 954 234 567"
+  },
+  {
+    "id": "CLI003",
+    "nombre": "Hotel Andalucía Palace",
+    "email": "cocina@andaluciapalace.com",
+    "direccion": "Plaza Nueva 8, 41003 Sevilla",
+    "telefono": "+34 954 345 678"
+  },
+  {
+    "id": "CLI004",
+    "nombre": "Cafetería La Esquina",
+    "email": "info@laesquina.es",
+    "direccion": "Calle Sierpes 12, 41004 Sevilla",
+    "telefono": "+34 954 456 789"
+  },
+  {
+    "id": "CLI005",
+    "nombre": "Panadería Los Arcos",
+    "email": "ventas@losarcos.com",
+    "direccion": "Plaza del Salvador 3, 41005 Sevilla",
+    "telefono": "+34 954 567 890"
+  }
+]

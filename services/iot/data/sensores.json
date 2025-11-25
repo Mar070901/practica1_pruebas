@@ -1,0 +1,79 @@
+[
+  {
+    "id": "SENS001",
+    "nombre": "Sensor Vehículo 1 - Zona Refrigerados",
+    "ubicacionId": "VEH001",
+    "tipoProducto": "refrigerado",
+    "rangoMin": 0,
+    "rangoMax": 4,
+    "umbralAlerta": 4,
+    "umbralCritico": 6,
+    "intervaloLectura": 300
+  },
+  {
+    "id": "SENS002",
+    "nombre": "Sensor Vehículo 1 - Zona Congelados",
+    "ubicacionId": "VEH001",
+    "tipoProducto": "congelado",
+    "rangoMin": -22,
+    "rangoMax": -18,
+    "umbralAlerta": -15,
+    "umbralCritico": -12,
+    "intervaloLectura": 300
+  },
+  {
+    "id": "SENS003",
+    "nombre": "Sensor Vehículo 2 - Productos Delicados",
+    "ubicacionId": "VEH002",
+    "tipoProducto": "delicado",
+    "rangoMin": 0,
+    "rangoMax": 2,
+    "umbralAlerta": 2,
+    "umbralCritico": 3,
+    "intervaloLectura": 180
+  },
+  {
+    "id": "SENS004",
+    "nombre": "Sensor Vehículo 2 - Zona Refrigerados",
+    "ubicacionId": "VEH002",
+    "tipoProducto": "refrigerado",
+    "rangoMin": 0,
+    "rangoMax": 4,
+    "umbralAlerta": 4,
+    "umbralCritico": 6,
+    "intervaloLectura": 300
+  },
+  {
+    "id": "SENS005",
+    "nombre": "Sensor Almacén Principal - Refrigerados",
+    "ubicacionId": "ALM001",
+    "tipoProducto": "refrigerado",
+    "rangoMin": 0,
+    "rangoMax": 4,
+    "umbralAlerta": 4,
+    "umbralCritico": 6,
+    "intervaloLectura": 600
+  },
+  {
+    "id": "SENS006",
+    "nombre": "Sensor Almacén Principal - Congelados",
+    "ubicacionId": "ALM001",
+    "tipoProducto": "congelado",
+    "rangoMin": -22,
+    "rangoMax": -18,
+    "umbralAlerta": -15,
+    "umbralCritico": -12,
+    "intervaloLectura": 600
+  },
+  {
+    "id": "SENS007",
+    "nombre": "Sensor Almacén Secundario - Refrigerados",
+    "ubicacionId": "ALM002",
+    "tipoProducto": "refrigerado",
+    "rangoMin": 0,
+    "rangoMax": 4,
+    "umbralAlerta": 4,
+    "umbralCritico": 6,
+    "intervaloLectura": 600
+  }
+]

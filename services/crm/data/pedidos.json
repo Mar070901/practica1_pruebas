@@ -1,0 +1,197 @@
+[
+  {
+    "id": "PED001",
+    "clienteId": "CLI001",
+    "proveedorId": "PROV001",
+    "conductorId": "COND001",
+    "fechaPedido": "2024-10-25",
+    "fechaEntrega": "2024-10-26",
+    "productos": [
+      {
+        "id": "PROD001",
+        "nombre": "Tomates Cherry",
+        "cantidad": 50,
+        "precio": 2.50,
+        "total": 125.00
+      },
+      {
+        "id": "PROD002",
+        "nombre": "Lechugas Frescas",
+        "cantidad": 30,
+        "precio": 1.80,
+        "total": 54.00
+      }
+    ],
+    "estado": "en_transito",
+    "totalPedido": 179.00,
+    "comentarios": "Entregar antes de las 12:00"
+  },
+  {
+    "id": "PED002",
+    "clienteId": "CLI002",
+    "proveedorId": "PROV002",
+    "conductorId": "COND002",
+    "fechaPedido": "2024-10-24",
+    "fechaEntrega": "2024-10-25",
+    "productos": [
+      {
+        "id": "PROD003",
+        "nombre": "Leche Integral 1L",
+        "cantidad": 100,
+        "precio": 0.95,
+        "total": 95.00
+      },
+      {
+        "id": "PROD004",
+        "nombre": "Yogur Natural 125g",
+        "cantidad": 50,
+        "precio": 0.70,
+        "total": 35.00
+      }
+    ],
+    "estado": "pendiente",
+    "totalPedido": 130.00,
+    "comentarios": "Stock urgente para el fin de semana"
+  },
+  {
+    "id": "PED003",
+    "clienteId": "CLI003",
+    "proveedorId": "PROV001",
+    "conductorId": "COND003",
+    "fechaPedido": "2024-10-20",
+    "fechaEntrega": "2024-10-21",
+    "productos": [
+      {
+        "id": "PROD005",
+        "nombre": "Fresas Frescas",
+        "cantidad": 20,
+        "precio": 4.50,
+        "total": 90.00
+      }
+    ],
+    "estado": "entregado",
+    "totalPedido": 90.00,
+    "comentarios": ""
+  },
+  {
+    "id": "PED004",
+    "clienteId": "CLI001",
+    "proveedorId": "PROV001",
+    "conductorId": "COND001",
+    "fechaPedido": "2024-10-23",
+    "fechaEntrega": "2024-10-24",
+    "productos": [
+      {
+        "id": "PROD006",
+        "nombre": "Pimientos Rojos",
+        "cantidad": 40,
+        "precio": 2.20,
+        "total": 88.00
+      },
+      {
+        "id": "PROD007",
+        "nombre": "Cebollas Blancas",
+        "cantidad": 35,
+        "precio": 1.10,
+        "total": 38.50
+      }
+    ],
+    "estado": "en_transito",
+    "totalPedido": 126.50,
+    "comentarios": "Recolección a las 10:00"
+  },
+  {
+    "id": "PED005",
+    "clienteId": "CLI004",
+    "proveedorId": "PROV002",
+    "conductorId": "COND004",
+    "fechaPedido": "2024-10-25",
+    "fechaEntrega": "2024-10-26",
+    "productos": [
+      {
+        "id": "PROD008",
+        "nombre": "Queso Curado",
+        "cantidad": 25,
+        "precio": 12.00,
+        "total": 300.00
+      }
+    ],
+    "estado": "pendiente",
+    "totalPedido": 300.00,
+    "comentarios": "Cantidad limitada disponible"
+  },
+  {
+    "id": "PED006",
+    "clienteId": "CLI005",
+    "proveedorId": "PROV001",
+    "conductorId": "COND001",
+    "fechaPedido": "2024-10-19",
+    "fechaEntrega": "2024-10-20",
+    "productos": [
+      {
+        "id": "PROD009",
+        "nombre": "Naranjas de Valencia",
+        "cantidad": 60,
+        "precio": 0.85,
+        "total": 51.00
+      }
+    ],
+    "estado": "entregado",
+    "totalPedido": 51.00,
+    "comentarios": ""
+  },
+  {
+    "id": "PED007",
+    "clienteId": "CLI006",
+    "proveedorId": "PROV003",
+    "conductorId": "COND002",
+    "fechaPedido": "2024-10-22",
+    "fechaEntrega": "2024-10-23",
+    "productos": [
+      {
+        "id": "PROD010",
+        "nombre": "Arroz Integral 25kg",
+        "cantidad": 5,
+        "precio": 45.00,
+        "total": 225.00
+      },
+      {
+        "id": "PROD011",
+        "nombre": "Lentejas Rojas 10kg",
+        "cantidad": 3,
+        "precio": 28.00,
+        "total": 84.00
+      }
+    ],
+    "estado": "entregado",
+    "totalPedido": 309.00,
+    "comentarios": ""
+  },
+  {
+    "id": "PED008",
+    "clienteId": "CLI007",
+    "proveedorId": "PROV001",
+    "conductorId": "COND003",
+    "fechaPedido": "2024-10-25",
+    "fechaEntrega": "2024-10-27",
+    "productos": [
+      {
+        "id": "PROD012",
+        "nombre": "Ensalada Mixta Premium",
+        "cantidad": 100,
+        "precio": 3.50,
+        "total": 350.00
+      },
+      {
+        "id": "PROD013",
+        "nombre": "Hierbas Frescas Mix",
+        "cantidad": 50,
+        "precio": 2.00,
+        "total": 100.00
+      }
+    ],
+    "estado": "en_transito",
+    "totalPedido": 450.00,
+    "comentarios": "Evento viernes - Mantener refrigeración"
+  }
+]
